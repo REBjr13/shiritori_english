@@ -5,8 +5,18 @@ class StartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      color: Colors.blue,
+    return Scaffold(
+      appBar: AppBar(title: Text('Shiritori English'),),
+      body: Column(
+        children: [
+          Container(
+            height: 200,
+            color: Colors.blue,
+            child: Center(child: Text("Header")),
+          ),
+          Expanded(child: Center(child: Text("Some text here"))),
+        ],
+      ),
     );
   }
 }
